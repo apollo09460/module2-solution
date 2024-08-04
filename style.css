@@ -1,0 +1,71 @@
+h1{
+
+color: rgb(30, 0, 201);
+text-align: center;
+font-family: 'Poppins', sans-serif;
+
+}
+.container{
+
+display: flex;
+flex-direction: row;
+gap: 20px;
+
+
+
+;
+
+}
+#first{
+
+    font-family: 'Poppins', sans-serif;
+width: 100%;
+
+
+text-align: center;
+margin: 1%;
+background-color: rgb(184, 255, 202);
+padding: 1%;
+
+}
+#second{
+ font-family: 'Poppins', sans-serif;
+    width: 100%;
+        text-align: center;
+        margin: 1%;
+        background-color: rgb(109, 189, 255);
+   
+
+
+}
+#third{
+width: 100%;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+margin: 1%;
+background-color: rgb(255, 208, 151);
+
+
+}
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   
+.container{
+ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 10px; /* Optional: space between grid items */
+
+}
+#third{
+
+    grid-column: span 2; 
+
+}
+
+}
